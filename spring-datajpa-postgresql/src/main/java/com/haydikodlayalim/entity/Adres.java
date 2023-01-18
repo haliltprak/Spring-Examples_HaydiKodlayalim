@@ -31,7 +31,7 @@ public class Adres implements Serializable {
     @JoinColumn(name = "kisi_adres_id")
     private Kisi kisi;
 
-    enum AdresTip{
+    public enum AdresTip{
         EV_ADRESI,
         IS_ADRES,
         DIGER
