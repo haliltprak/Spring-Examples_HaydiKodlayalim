@@ -7,5 +7,6 @@
   <packaging>pom</packaging> <!-- moduler calisacagimiz icin bunu eklemeliyiz -->
   <modules>
   	<module>spring-mongo-rest-api</module>
+      <module>spring-elasticsearch</module>
   </modules>
 </project>
