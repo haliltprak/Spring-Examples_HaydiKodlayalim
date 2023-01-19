@@ -11,6 +11,7 @@
         <module name="spring-mongo-rest-api" />
         <module name="springboot-api-doc" />
         <module name="spring-datajpa-postgresql" />
+        <module name="spring-boot-rabbitmq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
