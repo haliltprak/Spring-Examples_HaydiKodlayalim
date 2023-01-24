@@ -1,0 +1,4 @@
+com\haydikodlayalim\repository\KisiRepository.class
+com\haydikodlayalim\entity\Kisi.class
+com\haydikodlayalim\controller\KisiController.class
+com\haydikodlayalim\Application.class

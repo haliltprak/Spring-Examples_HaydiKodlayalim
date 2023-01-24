@@ -8,12 +8,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-
     <artifactId>spring-boot-dockerization</artifactId>
-    <packaging>jar</packaging>
-
-    <name>spring-boot-dockerization</name>
-    <url>http://maven.apache.org</url>
+    <version>1.0.1.RELEASE</version>
 
     <properties>
         <java.version>17</java.version>
@@ -39,6 +35,43 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- Dockerization islemini maven plugin ile kolay bir sekilde yapabiliriz ama en iyisi docker-file olusturarak yapmaktir.-->
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <verbose>true</verbose>
+                    <images>
+                        <image>
+                            <name>${project.artifactId}</name>
+                            <build>
+                                <from>openjdk:1</from>
+                                <entryPoint>
+                                    <exec>
+                                        <args>java</args>
+                                        <args>-jar</args>
+                                        <args>/maven/${project.artifactId}-${project.version}.jar</args>
+                                    </exec>
+                                </entryPoint>
+                                <assembly>
+                                    <descriptorRef>artifact</descriptorRef>
+                                </assembly>
+                            </build>
+                        </image>
+                    </images>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>build</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

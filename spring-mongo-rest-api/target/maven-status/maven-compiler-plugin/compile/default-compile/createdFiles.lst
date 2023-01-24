@@ -1,0 +1,4 @@
+com\haydikodlayalim\controller\KullaniciController.class
+com\haydikodlayalim\entity\Kullanici.class
+com\haydikodlayalim\Application.class
+com\haydikodlayalim\repository\KullaniciRepository.class
