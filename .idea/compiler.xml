@@ -14,10 +14,12 @@
         <module name="spring-boot-aop" />
         <module name="spring-mongo-rest-api" />
         <module name="spring-datajpa-postgresql" />
+        <module name="spring-boot-rest-template" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-boot-api-doc" target="17" />
+      <module name="spring-boot-graphql" target="17" />
       <module name="spring-hello-world" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -25,7 +27,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-aop" options="-parameters" />
       <module name="spring-boot-dockerization" options="-parameters" />
+      <module name="spring-boot-graphql" options="-parameters" />
       <module name="spring-boot-rabbitmq" options="-parameters" />
+      <module name="spring-boot-rest-template" options="-parameters" />
       <module name="spring-datajpa-postgresql" options="-parameters" />
       <module name="spring-elasticsearch" options="-parameters" />
       <module name="spring-mongo-rest-api" options="-parameters" />

@@ -11,6 +11,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring-boot-api-doc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-graphql/pom.xml" />
         <option value="$PROJECT_DIR$/spring-hello-world/pom.xml" />
       </set>
     </option>
