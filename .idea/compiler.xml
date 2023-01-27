@@ -12,6 +12,7 @@
         <module name="springboot-api-doc" />
         <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-aop" />
+        <module name="spring-redis-cache" />
         <module name="spring-mongo-rest-api" />
         <module name="spring-datajpa-postgresql" />
         <module name="spring-boot-rest-template" />
@@ -33,6 +34,7 @@
       <module name="spring-datajpa-postgresql" options="-parameters" />
       <module name="spring-elasticsearch" options="-parameters" />
       <module name="spring-mongo-rest-api" options="-parameters" />
+      <module name="spring-redis-cache" options="-parameters" />
       <module name="springboot-api-doc" options="-parameters" />
     </option>
   </component>
