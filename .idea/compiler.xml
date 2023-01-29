@@ -15,6 +15,7 @@
         <module name="spring-redis-cache" />
         <module name="spring-mongo-rest-api" />
         <module name="spring-datajpa-postgresql" />
+        <module name="spring-boot-websocket" />
         <module name="spring-boot-rest-template" />
       </profile>
     </annotationProcessing>
@@ -31,6 +32,7 @@
       <module name="spring-boot-graphql" options="-parameters" />
       <module name="spring-boot-rabbitmq" options="-parameters" />
       <module name="spring-boot-rest-template" options="-parameters" />
+      <module name="spring-boot-websocket" options="-parameters" />
       <module name="spring-datajpa-postgresql" options="-parameters" />
       <module name="spring-elasticsearch" options="-parameters" />
       <module name="spring-mongo-rest-api" options="-parameters" />
