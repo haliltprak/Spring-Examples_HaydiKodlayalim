@@ -23,6 +23,7 @@
     <bytecodeTargetLevel>
       <module name="spring-boot-api-doc" target="17" />
       <module name="spring-boot-graphql" target="17" />
+      <module name="spring-boot-hazelcast-hibernate-cache" target="17" />
       <module name="spring-hello-world" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -32,6 +33,7 @@
       <module name="spring-boot-dockerization" options="-parameters" />
       <module name="spring-boot-exception-handling" options="-parameters" />
       <module name="spring-boot-graphql" options="-parameters" />
+      <module name="spring-boot-hazelcast-hibernate-cache" options="-parameters" />
       <module name="spring-boot-rabbitmq" options="-parameters" />
       <module name="spring-boot-rest-template" options="-parameters" />
       <module name="spring-boot-websocket" options="-parameters" />
